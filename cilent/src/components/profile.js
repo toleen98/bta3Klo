@@ -6,6 +6,8 @@ import Layout from "./Layout";
 import axios from "axios";
 import BasicProfilePic from './basic-pf-pic.jpg';
 import Image from 'react-bootstrap/Image'
+import AuthService from "../services/auth.service";
+
 
 
 class Profile extends Component {
@@ -14,13 +16,13 @@ class Profile extends Component {
     this.state = {
 
           body: "",
-          name:'',
+          name:this.props.name,
           email:'',
           location:'',
           numOfPepole:'',
-          rate:''
-
-      posts: []
+          rate:'',
+          posts: [],
+          currentUser: AuthService.getCurrentUser()
 
     }
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -70,12 +72,10 @@ class Profile extends Component {
 
 componentDidMount(){
   this.profileDetails(this.state.email);
+  this.getService();
  }
 
-  componentDidMount() {
-    this.getService();
-  }
-
+  
   getService() {
     const that = this;
     axios
@@ -99,10 +99,13 @@ componentDidMount(){
   }
 
   render() {
+    const { currentUser } = this.state;
+    console.log(this.state.currentUser)
+
     return (
       <>
       <div>
-        <Image class = 'proImg' style={{height:'250px',width:'300'}} src={BasicProfilePic} responsive />
+        <Image className = 'proImg' style={{height:'250px',width:'300'}} src={BasicProfilePic}  />
             <ListGroup horizontal>
             <ListGroup.Item>Name:{this.state.name}</ListGroup.Item>
             <ListGroup.Item>location :{this.state.location}</ListGroup.Item>
