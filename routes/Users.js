@@ -174,7 +174,7 @@ router.post('/signup/update', (req, res) => {
   console.log("Body:", req.body);
 })
 
-router.post('/profile', (req, res) => {
+router.get('/profile', (req, res) => {
   User.find({ service: "service" }).limit(6)
     .then((service) => res.json(service))
     .catch((err) => res.status(400).json("Error: " + err));
