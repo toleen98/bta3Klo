@@ -43,7 +43,7 @@ handleSubmit1(event) {
 
   //FrontPage//connect server with client 
    axios.get
-   ("http://localhost:5000/search", this.state.value)
+   ("http://localhost:5000/search")
     .then((res) => {
         console.log(this.state.value)
           console.log(res)
@@ -56,22 +56,22 @@ handleSubmit1(event) {
     });
 
 //////randomly //for one user
- axios.get
-    ("http://localhost:5000/search", this.state.value)
-     .then((res) => {
-         console.log(this.state.value)
+//  axios.get
+//     ("http://localhost:5000/search", this.state.value)
+//      .then((res) => {
+//          console.log(this.state.value)
           
-           console.log(res.data.length)
-           var x=Math.floor(Math.random()*res.data.length); 
-           console.log(res.data[x])
-           var arr=[]
-           arr.push(res.data[x])
-           this.setState({
-             val:arr
-           })
-     }).catch((error) => {
-         console.log(error)
-     });
+//            console.log(res.data.length)
+//            var x=Math.floor(Math.random()*res.data.length); 
+//            console.log(res.data[x])
+//            var arr=[]
+//            arr.push(res.data[x])
+//            this.setState({
+//              val:arr
+//            })
+//      }).catch((error) => {
+//          console.log(error)
+//      });
 
 
 
@@ -82,7 +82,25 @@ handleSubmit1(event) {
     
   
   }
- 
+ componentDidMount(){
+  axios.get
+  ("http://localhost:5000/search")
+   .then((res) => {
+       console.log(this.state.value)
+        
+         console.log(res.data.length)
+         var x=Math.floor(Math.random()*res.data.length); 
+         console.log(res.data[x])
+         var arr=[]
+         arr.push(res.data[x])
+         this.setState({
+           val:arr
+         })
+   }).catch((error) => {
+       console.log(error)
+   });
+
+ }
 
   handleChange = event => {
     this.setState({ value: event.target.value });
@@ -96,12 +114,6 @@ handleSubmit1(event) {
 <br></br><br></br>
 
 <Form onSubmit={this.handleSubmit1}>
-
-
-
-
-
-
 
 //element to show random data
 <div>
