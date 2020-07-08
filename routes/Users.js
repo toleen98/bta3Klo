@@ -174,6 +174,11 @@ router.post('/signup/update', (req, res) => {
   console.log("Body:", req.body);
 })
 
+router.get('/profile', (req, res) => {
+  User.find({ service: "service" }).limit(6)
+    .then((service) => res.json(service))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
 
 
 module.exports = router;
