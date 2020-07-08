@@ -43,7 +43,7 @@ handleSubmit1(event) {
 
   //FrontPage//connect server with client 
    axios.get
-   ("http://localhost:5000/search", this.state.value)
+   ("http://localhost:5000/search")
     .then((res) => {
         console.log(this.state.value)
           console.log(res)
@@ -84,7 +84,7 @@ handleSubmit1(event) {
   }
  componentDidMount(){
   axios.get
-  ("http://localhost:5000/search", this.state.value)
+  ("http://localhost:5000/search")
    .then((res) => {
        console.log(this.state.value)
         
