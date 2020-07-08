@@ -21,23 +21,32 @@ class Profile extends Component {
 
   }
 
-  //send data to database
+  //send data to database to save
   handleSubmit(event) {
     event.preventDefault();
     const payload = {
       body: this.state.body
     }
 
-    //sending data to server
-    axios.post('https://localhost:5000/profile', payload)
+    // data to server
+    axios.post('http://localhost:5000/signup/update', payload)
       .then(function (response) {
-        console.log(response);
+        console.log(response)
       })
       .catch(function (error) {
-        console.log(error);
+        console.log(error)
       });
   }
 
+  // getService() {
+  //   axios.post('http://localhost:5000')
+  //     .then(function (response) {
+  //       console.log(response)
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error)
+  //     });
+  // }
 
   render() {
     return (
