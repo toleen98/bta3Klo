@@ -46,7 +46,7 @@ app.use('/', Users)
 
 const User = require('./models/User');
 //function to get all data 
-var x=app.get("/search", function(req, res)  {
+app.get("/search", function(req, res)  {
   User.find(function(err,user)  {
       if(err){
           throw err;
