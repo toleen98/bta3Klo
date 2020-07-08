@@ -9,7 +9,8 @@ class Profile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      body: ""
+      body: "",
+      posts: []
     }
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleServiceAdd = this.handleServiceAdd.bind(this)
@@ -38,15 +39,31 @@ class Profile extends Component {
       });
   }
 
-  // getService() {
-  //   axios.post('http://localhost:5000')
-  //     .then(function (response) {
-  //       console.log(response)
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error)
-  //     });
-  // }
+  componentDidMount() {
+    this.getService();
+  }
+
+  getService() {
+    const that = this;
+    axios
+      .get("http://localhost:5000/profile")
+      .then((response) => {
+        that.setState({ posts: response.data });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  displayService = (posts) => {
+    if (!posts.length) return null;
+
+    return posts.map((post, index) => (
+      <div key={index}>
+        <h3>{post.body}</h3>
+      </div>
+    ))
+  }
 
   render() {
     return (
@@ -59,6 +76,7 @@ class Profile extends Component {
             {/* <Button color="primary" size="sm" onClick={() => this.handleClick}>Add Service</Button> */}
             <Button color="primary" size="sm" type="submit">Add Service</Button>
           </Form>
+          <div className="fromService">{this.displayService(this.state.posts)}</div>
           <ListGroup>
             <ListGroup.Item>Service 1</ListGroup.Item>
             <ListGroup.Item>Service 2</ListGroup.Item>
