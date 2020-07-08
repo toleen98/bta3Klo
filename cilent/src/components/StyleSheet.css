@@ -1,0 +1,477 @@
+body {
+
+  background-color: white;
+}
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    width: 300px;
+    transform: translate(-50%, -50%)
+}
+/* Login & SignUp Page */
+.form {
+    border-radius: 25px;
+    border: 3px solid #f4511e;
+    padding: 40px;
+    width: 400px;
+    height: 150px; 
+    height: 12em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+/* Login Page */
+#emLog {
+    color: white;
+    font-size: x-large;
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px
+}
+
+#pLog {
+    color: white;
+    font-size: x-large;
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px
+}
+
+#logBttn {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#emailLog {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+#passwordLog {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+/* SignUp Page */
+#nmSign {
+  color: white;
+  font-size: x-large;
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px
+}
+
+#nameSign {
+  display: inline-block;
+  border-radius: 8px;
+  }
+
+#emSing {
+  color: white;
+  font-size: x-large;
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px
+}
+
+#pSign {
+  color: white;
+  font-size: x-large;
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px
+}
+
+#signBttn {
+display: inline-block;
+border-radius: 12px;
+background-color: #f4511e;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: medium;
+padding: 10px;
+width: 90px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+#emailSign {
+display: inline-block;
+border-radius: 8px;
+}
+
+#passwordSign {
+display: inline-block;
+border-radius: 8px;
+}
+
+/* Nav bar */
+#navbar {
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    background-color: #f4511e;
+}
+
+#navItemPro {
+  border-radius: 12px;
+  background-color: #24478f;
+  float: right;
+  position: absolute;
+  padding: 10px;
+  top: 35%;
+  left: 95.5%;
+  transform: translate(-50%, -50%);
+}
+
+#navItemPro {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #24478f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#navItemHome {
+  border-radius: 12px;
+  background-color: #24478f;
+  float: none;
+  position: absolute;
+  padding: 10px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#navItemHome {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #24478f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#navItemLogin {
+  border-radius: 12px;
+  background-color: #24478f;
+  float: left;
+  position: absolute;
+  padding: 10px;
+  top: 35%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+}
+
+#navItemLogin {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #24478f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#navItemLogout {
+  border-radius: 12px;
+  background-color: #24478f;
+  float: left;
+  position: absolute;
+  padding: 10px;
+  top: 35%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+}
+
+#navItemLogout {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #24478f;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+a { color: inherit; }
+
+/* Front Page */
+
+#search {
+    border-radius: 25px;
+    border: 3px solid #f4511e;
+    padding: 40px;
+    width: 800px;
+    height: 150px; 
+    height: 8em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.searchL{
+  color: white;
+  font-size: x-large;
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px
+}
+
+.searchI{
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.searchBttn{
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#serves {
+    border-radius: 25px;
+    border: 3px solid #f4511e;
+    padding: 40px;
+    width: 800px;
+    height: 150px; 
+    height: 8em;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#heder{
+  color: white;
+  font-size: x-large;
+}
+
+#serves {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+#smallLogo {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  width: 400px;
+  transform: translate(-50%, -50%)
+}
+
+/* Hiring Page */
+#basicPic {
+    position: absolute;
+    top: 11%;
+    left: 20%;
+    margin-right: -50%;
+    width: 175px;
+    transform: translate(-50%, -50%);
+    border-radius: 30%
+}
+
+#HiringPage {
+  border-radius: 25px;
+  border: 3px solid #f4511e;
+  padding: 40px;
+  width: 400px;
+  height: 150px; 
+  height: 45em;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#userH {
+  color: white;
+  font-size: x-large;
+  width:300px;
+  float: left;
+  margin-left: 175px;
+  margin-top: 5px;
+  padding-right:10px
+}
+
+#userHR {
+  color: white;
+  font-size: x-large;
+  width:300px;
+  float: left;
+  margin-left: 175px;
+  margin-top: 5px;
+  padding-right:10px
+}
+
+#info {
+  color: white;
+  font-size: large;
+  width:300px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding-right:10px
+}
+
+#hireBttn {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#feedbackBttn {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#rateL {
+  color: white;
+  font-size: x-large;
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px
+}
+
+#rateIN {
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+#rateIM {
+  display: inline-block;
+  border-radius: 12px;
+}
+
+/* ProfilePage */
+
+#userProf {
+  border-radius: 25px;
+  border: 3px solid #f4511e;
+  padding: 40px;
+  width: 400px;
+  height: 150px; 
+  height: 20em;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#userNameP{
+  color: white;
+  font-size: x-large;
+  width:300px;
+  float: left;
+  margin-left: 175px;
+  padding-right:10px
+}
+
+#pip{
+  color: white;
+  font-size: x-large;
+  width:300px;
+  float: left;
+  margin-top: 20px;
+  padding-right:10px
+}
+
+#basicPicP {
+  position: absolute;
+  top: 18%;
+  left: 20%;
+  margin-right: -50%;
+  width: 175px;
+  transform: translate(-50%, -50%);
+  border-radius: 30%
+}
