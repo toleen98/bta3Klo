@@ -84,10 +84,10 @@ componentDidMount(){
       <div>
         <Image class = 'proImg' style={{height:'250px',width:'300'}} src={BasicProfilePic} responsive />
             <ListGroup horizontal>
-            <ListGroup.Item>Name</ListGroup.Item>
-            <ListGroup.Item>location </ListGroup.Item>
-            <ListGroup.Item>Rate</ListGroup.Item>
-            <ListGroup.Item>client</ListGroup.Item>
+            <ListGroup.Item>Name:{this.state.name}</ListGroup.Item>
+            <ListGroup.Item>location :{this.state.location}</ListGroup.Item>
+            <ListGroup.Item>Rate:{this.state.rate}</ListGroup.Item>
+            <ListGroup.Item>client:{this.state.numOfPepole}</ListGroup.Item>
             </ListGroup>
       </div>
 
