@@ -6,6 +6,7 @@ import SignUpForm from './components/SignUpForm'
 import LoginForm from './components/LoginForm'
 import NavBar from './components/NavBar'
 import Layout from "./components/Layout"
+import User1 from "./users/user1"
 
 class App extends React.Component {
     render() {
@@ -17,6 +18,8 @@ class App extends React.Component {
                     <Route exact path="/signUp" component={SignUpForm} />
                     <Route exact path="/" component={FrontPage} />
                     <Route exact path="/profile" component={Profile} />
+                    <Route exact path="/user1" component={User1} />
+
                 </Layout>
             </div>
         )

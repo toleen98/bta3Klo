@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 // import { login } from './UserMethods'
 import StyleSheet from './StyleSheet.css';
-import logo from './Logo.png';
+// import logo from './Logo.png';
 import AuthService from "../services/auth.service";
 
 
@@ -36,7 +36,7 @@ class SignInForm extends Component {
           if (res) {
             this.setState({loading : true});
             console.log("logged ")
-            this.props.history.push(`/profile`)
+            this.props.history.push(`/`)
           }
         })
     }
@@ -44,7 +44,7 @@ class SignInForm extends Component {
     render() {
         return (
           <>
-          <img src={logo} alt='Logo' className='logo'></img>
+          {/* <img src={logo} alt='Logo' className='logo'></img> */}
         <div className="form">
             <form onSubmit={this.handleSubmit} >
             <div>

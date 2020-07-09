@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import { singUp } from './UserMethods'
 import { Link } from 'react-router-dom'
 import StyleSheet from './StyleSheet.css';
-import logo from './Logo.png';
+// import logo from './Logo.png';
 import Axios from 'axios';
 import AuthService from "../services/auth.service";
 
@@ -50,7 +50,7 @@ class SignUpForm extends Component {
     render() {
         return (
             <>
-            <img src={logo} alt='Logo' className='logo'></img>
+            {/* <img src={logo} alt='Logo' className='logo'></img> */}
         <div className="form">
             <form onSubmit={this.handleSubmit}>
             <div >

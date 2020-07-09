@@ -27,6 +27,8 @@ router.post('/signup', (req, res) => {
             email: req.body.email,
             password: hash,
             category:req.body.category,
+            service: req.body.service
+
           });
           console.log(newUser)
           newUser
@@ -55,22 +57,20 @@ router.post("/login", function (req, res) {
       if (err) {
         return res.status(400).json({ PasswrdNotCorrect: "password not correct" })
       }
-      const accessToken = jwt.sign({ id: user.id }, config.secret, {
-        expiresIn: 86400 // 24 hours
-      });
-      res.json({
+      // const accessToken = jwt.sign({ id: user.id }, config.secret, {
+      //   expiresIn: 86400 // 24 hours
+      // });
+      return res.json({
         id: user.id,
         username: user.username,
         email: user.email,
-        accessToken: accessToken
+        // accessToken: accessToken
       });
 
 
     })
     console.log(user)
-    // compear with the password
-
-    return res.json({ exist: true })
+    
 
 
   });

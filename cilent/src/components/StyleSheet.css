@@ -1,6 +1,10 @@
 body {
-
+  background-image: url("pic.jpg");
   background-color: white;
+  height: 100%; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover
 }
 .logo {
     position: absolute;
@@ -13,14 +17,15 @@ body {
 /* Login & SignUp Page */
 .form {
     border-radius: 25px;
-    border: 3px solid #98c6e6;
+    /* border: 5px solid rgba(234, 236, 236, 0.5); */
+    background-color: rgba(234, 236, 236, 0.5) ;
     padding: 40px;
     width: 400px;
-    height: 150px; 
-    height: 12em;
+    height: 400px; 
+    height: 35em;
     position: relative;
     margin: 0;
-    position: absolute;
+    position: fixed;
     top: 53%;
     left: 50%;
     margin-right: -50%;
@@ -28,27 +33,28 @@ body {
 }
 /* Login Page */
 #emLog {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: x-large;
-    width:180px;
+    /* font-style: italic; */
+    font-style: oblique ;
+    width:200px;
     clear:left;
-    text-align:right;
-    padding-right:10px
+    text-align:center;
+    padding-right:20px
 }
-
 #pLog {
     color: white;
     font-size: x-large;
-    width:180px;
+    font-style: oblique ;
+    width:200px;
     clear:left;
-    text-align:right;
+    text-align:left;
     padding-right:10px
 }
-
 #logBttn {
   display: inline-block;
   border-radius: 12px;
-  background-color: #f4511e;
+  background-color: rgb(103, 162, 250);
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -59,84 +65,103 @@ body {
   cursor: pointer;
   margin: 5px;
 }
-
 #emailLog {
   display: inline-block;
   border-radius: 8px;
 }
-
 #passwordLog {
   display: inline-block;
   border-radius: 8px;
 }
-
 /* SignUp Page */
 #nmSign {
   color: white;
-  font-size: x-large;
+  font-size: xx-large;
+  font-style: oblique ;
   width:180px;
   clear:left;
-  text-align:right;
+  text-align:center;
   padding-right:10px
 }
-
-#nameSign {
+/* #nameSign {
   display: inline-block;
   border-radius: 8px;
-  }
-
+  } */
 #emSing {
   color: white;
   font-size: x-large;
+  font-style: oblique ;
   width:180px;
   clear:left;
   text-align:right;
   padding-right:10px
 }
-
-#pSign {
+#service{
   color: white;
   font-size: x-large;
+  font-style: oblique ;
   width:180px;
   clear:left;
-  text-align:right;
+  text-align:center;
   padding-right:10px
 }
-
+#pSign {
+  color: rgb(94, 145, 240);
+  font-size: x-large;
+  font-style: oblique ;
+  width:180px;
+  clear:left;
+  text-align:center;
+  padding-right:10px
+}
+#cat {
+  color: rgb(94, 145, 240);
+  font-size: x-large;
+  font-style: oblique ;
+  width:180px;
+  clear:left;
+  text-align:center;
+  padding-right:10px
+}
 #signBttn {
 display: inline-block;
 border-radius: 12px;
-background-color: #f4511e;
+background-color: rgb(103, 162, 250);
 border: none;
 color: #FFFFFF;
 text-align: center;
 font-size: medium;
 padding: 10px;
-width: 90px;
+width: 100px;
 transition: all 0.5s;
 cursor: pointer;
-margin: 5px;
+margin: 10px;
 }
-
-#emailSign {
+#xx{
+  color: #020202;
+  font-size: large;
+}
+#zz{
+  color: #020202;
+}
+/* #emailSign {
 display: inline-block;
 border-radius: 8px;
-}
-
-#passwordSign {
+} */
+/* #passwordSign {
 display: inline-block;
 border-radius: 8px;
-}
-
+} */
 /* Nav bar */
 #navbar {
     border-radius: 25px;
     position: relative;
     overflow: hidden;
     height: 60px;
-    background-color: #C0C0C0;
+    background-color: rgba(255,255,255,.5);
+    /* background-color: transparent; */
+    /* opacity: 0.7;  */
 }
-
 #navItemPro {
   border-radius: 12px;
   background-color: rgb(103, 162, 250);
@@ -147,11 +172,10 @@ border-radius: 8px;
   left: 95.5%;
   transform: translate(-50%, -50%);
 }
-
 #navItemPro {
   display: inline-block;
   border-radius: 12px;
-  background-color: #6495ED;
+  background-color: #0A3483;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -161,7 +185,6 @@ border-radius: 8px;
   cursor: pointer;
   margin: 10px;
 }
-
 #navItemHome {
   border-radius: 12px;
   background-color: #6495ED;
@@ -172,7 +195,6 @@ border-radius: 8px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 #navItemHome {
   display: inline-block;
   border-radius: 12px;
@@ -186,7 +208,6 @@ border-radius: 8px;
   cursor: pointer;
   margin: 10px;
 }
-
 #navItemLogin {
   border-radius: 12px;
   background-color: #6495ED;
@@ -197,7 +218,6 @@ border-radius: 8px;
   left: 60px;
   transform: translate(-50%, -50%);
 }
-
 #navItemLogin {
   display: inline-block;
   border-radius: 12px;
@@ -211,7 +231,6 @@ border-radius: 8px;
   cursor: pointer;
   margin: 10px;
 }
-
 #navItemLogout {
   border-radius: 12px;
   background-color: #6495ED;
@@ -222,7 +241,6 @@ border-radius: 8px;
   left: 60px;
   transform: translate(-50%, -50%);
 }
-
 #navItemLogout {
   display: inline-block;
   border-radius: 12px;
@@ -236,14 +254,11 @@ border-radius: 8px;
   cursor: pointer;
   margin: 10px;
 }
-
 a { color: inherit; }
-
 /* Front Page */
-
 #search {
     border-radius: 25px;
-    border: 3px solid #f4511e;
+    border: 3px solid #F4511E;
     padding: 40px;
     width: 800px;
     height: 150px; 
@@ -256,7 +271,6 @@ a { color: inherit; }
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-
 .searchL{
   color: white;
   font-size: x-large;
@@ -265,17 +279,15 @@ a { color: inherit; }
   text-align:right;
   padding-right:10px
 }
-
 .searchI{
   display: inline-block;
   border-radius: 8px;
   margin-left: 10px;
 }
-
 .searchBttn{
   display: inline-block;
   border-radius: 12px;
-  background-color: #f4511e;
+  background-color: #F4511E;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -286,10 +298,9 @@ a { color: inherit; }
   cursor: pointer;
   margin: 5px;
 }
-
 #serves {
     border-radius: 25px;
-    border: 3px solid #f4511e;
+    border: 3px solid #F4511E;
     padding: 40px;
     width: 800px;
     height: 150px; 
@@ -302,18 +313,15 @@ a { color: inherit; }
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-
 #heder{
   color: white;
   font-size: x-large;
 }
-
 #serves {
   color: white;
   font-size: x-large;
   text-align: center;
 }
-
 #smallLogo {
   position: absolute;
   top: 90%;
@@ -322,7 +330,6 @@ a { color: inherit; }
   width: 400px;
   transform: translate(-50%, -50%)
 }
-
 /* Hiring Page */
 #basicPic {
     position: absolute;
@@ -333,10 +340,9 @@ a { color: inherit; }
     transform: translate(-50%, -50%);
     border-radius: 30%
 }
-
 #HiringPage {
   border-radius: 25px;
-  border: 3px solid #f4511e;
+  border: 3px solid #F4511E;
   padding: 40px;
   width: 400px;
   height: 150px; 
@@ -349,7 +355,6 @@ a { color: inherit; }
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-
 #userH {
   color: white;
   font-size: x-large;
@@ -359,7 +364,6 @@ a { color: inherit; }
   margin-top: 5px;
   padding-right:10px
 }
-
 #userHR {
   color: white;
   font-size: x-large;
@@ -369,7 +373,6 @@ a { color: inherit; }
   margin-top: 5px;
   padding-right:10px
 }
-
 #info {
   color: white;
   font-size: large;
@@ -379,11 +382,10 @@ a { color: inherit; }
   margin-top: 5px;
   padding-right:10px
 }
-
 #hireBttn {
   display: inline-block;
   border-radius: 12px;
-  background-color: #f4511e;
+  background-color: #F4511E;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -394,11 +396,10 @@ a { color: inherit; }
   cursor: pointer;
   margin: 5px;
 }
-
 #feedbackBttn {
   display: inline-block;
   border-radius: 12px;
-  background-color: #f4511e;
+  background-color: #F4511E;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -409,7 +410,6 @@ a { color: inherit; }
   cursor: pointer;
   margin: 5px;
 }
-
 #rateL {
   color: white;
   font-size: x-large;
@@ -418,23 +418,19 @@ a { color: inherit; }
   text-align:right;
   padding-right:10px
 }
-
 #rateIN {
   display: inline-block;
   border-radius: 8px;
   margin-left: 5px;
 }
-
 #rateIM {
   display: inline-block;
   border-radius: 12px;
 }
-
 /* ProfilePage */
-
 #userProf {
   border-radius: 25px;
-  border: 3px solid #f4511e;
+  border: 3px solid #F4511E;
   padding: 40px;
   width: 400px;
   height: 150px; 
@@ -447,7 +443,6 @@ a { color: inherit; }
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
-
 #userNameP{
   color: white;
   font-size: x-large;
@@ -456,7 +451,6 @@ a { color: inherit; }
   margin-left: 175px;
   padding-right:10px
 }
-
 #pip{
   color: white;
   font-size: x-large;
@@ -465,7 +459,6 @@ a { color: inherit; }
   margin-top: 20px;
   padding-right:10px
 }
-
 #basicPicP {
   position: absolute;
   top: 18%;

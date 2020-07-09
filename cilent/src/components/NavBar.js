@@ -39,6 +39,9 @@ class NavBar extends Component {
                             <li id="navItemHome">
                                 <NavLink style={{color: "White"}} to ='/' className='navLink'>Home</NavLink>
                             </li>
+                            {/* <li>
+                            <NavLink style={{color: "White"}} to ='/profile' className='navLink'>profile</NavLink>
+                            </li> */}
                         </ul>
                         {localStorage.usertoken ? userLink : loginSingUpLink}
                     </div>
