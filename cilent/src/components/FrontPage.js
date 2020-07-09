@@ -158,7 +158,7 @@ if(user.category==this.state.value){
   <Card>
     <Card.Img variant="top" src="https://tse3.mm.bing.net/th?id=OIP.iZsAXH5tvmQw7csH95do0QHaHa&pid=Api&P=0&w=300&h=300" />
     <Card.Body>
-      <Card.Title>randomly card</Card.Title>
+      <Card.Title>{v.category}</Card.Title>
       <Card.Text>
       <div>{v.name}</div>
       <div>{v.email}</div>
@@ -185,12 +185,14 @@ if(user.category==this.state.value){
   <Card>
     <Card.Img variant="top" src="https://tse3.mm.bing.net/th?id=OIP.iZsAXH5tvmQw7csH95do0QHaHa&pid=Api&P=0&w=300&h=300" />
     <Card.Body>
-      <Card.Title>randomly card</Card.Title>
+      <Card.Title>{v2.category}</Card.Title>
       <Card.Text>
       <div>{v2.name}</div>
       <div>{v2.email}</div>
       <div>{v2.location}</div>
       <div>{v2.service}</div>
+      <div>{v2.category}</div>
+
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -212,7 +214,7 @@ if(user.category==this.state.value){
   <Card>
     <Card.Img variant="top" src="https://tse3.mm.bing.net/th?id=OIP.iZsAXH5tvmQw7csH95do0QHaHa&pid=Api&P=0&w=300&h=300" />
     <Card.Body>
-      <Card.Title>randomly card</Card.Title>
+      <Card.Title>{v3.category}</Card.Title>
       <Card.Text>
       <div>{v3.name}</div>
       <div>{v3.email}</div>
